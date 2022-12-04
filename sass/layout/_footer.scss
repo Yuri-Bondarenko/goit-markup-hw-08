@@ -1,15 +1,22 @@
 .footer {
+    padding: 60px 0;
     margin: 0 auto;
     color: var(--footer-text-color);
     background-color: #2f303a;
 }
 
-.footer__container {
-    display: flex;
+// .footer__container {
+//     display: block;
+//     align-items: center;
+//     justify-content:center;
+//     gap: 70px;
+//     padding: 60px 15px;
+// }
+
+.footer__left{
     align-items: center;
-    justify-content: baseline;
-    gap: 70px;
-    padding: 60px 15px;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .logo__footer {
