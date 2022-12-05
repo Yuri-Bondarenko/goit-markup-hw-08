@@ -1,5 +1,12 @@
 .form {
   width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 570px;
+    
+  }
 }
 
 .form__title {
@@ -11,18 +18,26 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 10px;
+  }
 }
 
 .form__list {
   display: block;
+  overflow: hidden;
   align-items: center;
   justify-content: baseline;
   gap: 12px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    
+  }
 }
 
 .form__label {
   position: relative;
-  overflow: hidden;
   background-color: transparent;
 }
 
@@ -40,17 +55,23 @@
   transition: color var(--trns-org);
 
   &:focus + .form__text {
-    transform: translateY(-90%);
+    transform: translateY(-150%);
   }
 
   &:focus {
     color: var(--white-text-color);
   }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
 }
 
 .form__text {
   position: absolute;
-  top: 0;
+  top: -80%;
   left: 16px;
   padding-top: 15px;
 
@@ -63,6 +84,11 @@
   background-color: transparent;
   user-select: none;
   transition: transform var(--trns-org);
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
 }
 
 .form__btn {
@@ -70,8 +96,10 @@
   font-size: 16px;
   line-height: 1.9x;
   letter-spacing: 0.06em;
+  
 
   display: flex;
+  align-items: center;
 
   color: #ffffff;
   background: #2196f3;
@@ -81,6 +109,7 @@
 
   padding: 10px 28px;
   margin: 0 auto;
+  margin-top: 20px;
 
   cursor: pointer;
 
@@ -89,4 +118,7 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(240, 235, 235, 0.945);
   }
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+    }
 }
