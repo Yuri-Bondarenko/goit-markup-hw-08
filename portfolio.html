@@ -50,6 +50,11 @@
             >
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="24" height="24">
+            <use href="./images/icons.svg#mobile-btn"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -87,7 +92,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="team__border">
+                <div class="team__border team-border-one">
                   <h2 class="team__title">Технокряк</h2>
                   <p class="team__text">Веб-сайт</p>
                 </div>
@@ -282,17 +287,14 @@
     <!-- Підвал -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="">
-          <a href="./index.html" class="logo list"
-            >Web<span class="logo__icon logo__footer">Studio</span>
+        <div class="footer__left">
+          <a href="./index.html" class="logo logo-tabl list">Web<span class="logo__icon logo__footer">Studio</span>
           </a>
           <address class="address">
             <span class="address__text">м. Київ, пр-т Лесі Українки, 26</span>
             <ul class="footer-nav list">
               <li class="footer-nav__items">
-                <a href="mailto:info@devstudio.com" class="footer-nav__link list"
-                  >info@devstudio.com</a
-                >
+                <a href="mailto:info@devstudio.com" class="footer-nav__link list">info@devstudio.com</a>
               </li>
               <li class="footer-nav__items">
                 <a href="tel:+380961111111" class="footer-nav__link list">+38 096 111 11 11</a>
@@ -304,48 +306,28 @@
           <h2 class="social__text">приєднуйтесь</h2>
           <ul class="footer-social__list list">
             <li class="social__items">
-              <a
-                class="social__link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                ><svg class="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
+              <a class="social__link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram"><svg class="" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg></a>
             </li>
             <li class="social__items">
-              <a
-                class="social__link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-                ><svg class="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
+              <a class="social__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Twitter"><svg class="" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg></a>
             </li>
             <li class="social__items">
-              <a
-                class="social__link"
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                ><svg class="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
+              <a class="social__link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook"><svg class="" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg></a>
             </li>
             <li class="social__items">
-              <a
-                class="social__link"
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Linkedin"
-                ><svg class="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
+              <a class="social__link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                aria-label="Linkedin"><svg class="" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg></a>
             </li>
           </ul>
         </div>
@@ -365,5 +347,80 @@
         </div>
       </div>
     </footer>
+
+
+    <!-- MOBILE WINDOW -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-menu-icon" width="24" height="24">
+          <use href="./images/icons.svg#mobile-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-link  list">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-link mobile-link--current list">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item"><a href="" class="mobile-link list">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contacts-list list">
+        <li class="mobile-contacts-item">
+          <a href="tel:+380961111111" class="mobile-contacts-tel list">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts-mail list"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-cocial-list list">
+        <li class="mobile-cocial-item">
+          <a
+            class="mobile-cocial-link list"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-cocial-item">
+          <a
+            class="mobile-cocial-link list"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-cocial-item">
+          <a
+            class="mobile-cocial-link list"
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-cocial-item">
+          <a
+            class="mobile-cocial-link list"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,26 +1,23 @@
 .footer {
-  padding: 60px 0;
-  padding-top: 44px;
-  margin: 0 auto;
   color: var(--footer-text-color);
   background-color: #2f303a;
 }
 
 .footer__container {
+  padding: 60px 15px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 70px;
-    padding: 60px 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 0;
     flex-wrap: nowrap;
     gap: 0;
-    align-items:center;
+
     justify-content: space-between;
   }
 }
@@ -31,22 +28,21 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
-}
-@media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
     display: block;
-
-}
+  }
 }
 
 .logo__footer {
   color: var(--white-text-color);
   margin-bottom: 20px;
 
-@media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     text-align: center;
-}
+  }
 }
 
 .footer-nav__items:not(:last-child) {

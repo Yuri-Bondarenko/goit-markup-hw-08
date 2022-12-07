@@ -1,0 +1,136 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  transition: background-color var(--trns-org);
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.close-menu-icon {
+  transition: fill var(--trns-org);
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus .close-menu-icon {
+  fill: var(--accent);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background: #ffffff;
+  z-index: 999;
+
+  transform: translateX(100%);
+
+  transition: transform var(--trns-org);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: var(--primary-text-color);
+}
+
+.mobile-menu-list {
+  margin-bottom: 302px;
+}
+
+.mobile-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+  &:hover,
+  &:hover,
+  &--current {
+    color: var(--accent);
+  }
+
+  transition: color var(--trns-org);
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts-list {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: var(--accent);
+}
+
+.mobile-contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.mobile-cocial-list {
+  display: flex;
+}
+
+.mobile-cocial-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-cocial-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-cocial-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: var(--accent);
+}
