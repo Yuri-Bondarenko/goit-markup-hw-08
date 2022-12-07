@@ -43,6 +43,18 @@
   }
 }
 
+.team__icon {
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
 .team__border {
   border: 1px solid #eeeeee;
   border-top: 0;
@@ -50,10 +62,10 @@
   margin-bottom: 4px;
 }
 
-.team-border-one{
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding-bottom: 56px;
-    }
+.team-border-one {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
 }
 
 .team__title {

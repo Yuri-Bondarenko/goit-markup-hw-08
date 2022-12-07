@@ -2,8 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  gap: 8px;
+  gap: 15px;
   margin-bottom: 40px;
+
+  @media screen and (min-width: 480px) {
+    gap: 8px;
+  }
 
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
@@ -12,7 +16,11 @@
   }
 }
 
-
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .button__item:nth-child(3) {
+    padding-right: 20px;
+  }
+}
 
 .content__button {
   padding: 6px 22px;

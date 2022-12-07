@@ -311,8 +311,13 @@ img {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  gap: 8px;
+  gap: 15px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 480px) {
+  .button__list {
+    gap: 8px;
+  }
 }
 @media screen and (min-width: 768px) {
   .button__list {
@@ -325,6 +330,11 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .button__item:nth-child(3) {
+    padding-right: 20px;
+  }
+}
 .content__button {
   padding: 6px 22px;
   color: var(--primary-text-color);
@@ -994,6 +1004,7 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -1240,6 +1251,16 @@ img {
 .work__icon {
   width: 450px;
 }
+@media screen and (min-width: 768px) {
+  .work__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work__icon {
+    width: 270px;
+  }
+}
 
 .work__group {
   display: block;
@@ -1377,6 +1398,20 @@ img {
 .team__link:hover .overlay__group {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.team__icon {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__icon {
+    width: 370px;
+  }
 }
 
 .team__border {
