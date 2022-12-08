@@ -128,10 +128,14 @@
           <ul class="samples__list list">
             <li class="samples__items">
               <img
-                src="./images/box1.jpg"
+                srcset="
+                  ./images/samples-img/img-1_sl@1x.jpg 1x,
+                  ./images/samples-img/img-1_sl@2x.jpg 2x
+                "
+                src="./images/samples-img/img-1_sl@1x.jpg"
+                alt="Людина працює за компьютером"
                 width="370"
                 height="294"
-                alt="Людина працює за компьютером"
               />
               <div class="samples__over">
                 <p class="samples__text">Десктопні додатки</p>
@@ -139,7 +143,11 @@
             </li>
             <li class="samples__items">
               <img
-                src="./images/box2.jpg"
+                srcset="
+                  ./images/samples-img/img-2_sl@1x.jpg 1x,
+                  ./images/samples-img/img-2_sl@2x.jpg 2x
+                "
+                src="./images/samples-img/img-2_sl@1x.jpg"
                 width="370"
                 height="294"
                 alt="Людина обирає макет проєкту"
@@ -150,7 +158,11 @@
             </li>
             <li class="samples__items">
               <img
-                src="./images/box3.jpg"
+                srcset="
+                  ./images/samples-img/img-3_sl@1x.jpg 1x,
+                  ./images/samples-img/img-3_sl@2x.jpg 2x
+                "
+                src="./images/samples-img/img-3_sl@1x.jpg"
                 width="370"
                 height="294"
                 alt="Людина обирає кольорову гамму"
@@ -168,13 +180,38 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="work__list list">
             <li class="work__items">
-              <img
-                class="work__icon"
-                src="./images/productdesigner.jpg"
-                width="270"
-                height="260"
-                alt="Фотографія Product Designer"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work-img/img-1_lw@1x.jpg 1x,
+                    ./images/work-img/img-1_lw@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/work-img/img-1_mw@1x.jpg 1x,
+                    ./images/work-img/img-1_mw@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/work-img/img-1_sw@1x.jpg 1x,
+                    ./images/work-img/img-1_sw@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="work__icon"
+                  src="./images/work-img/img-1_sw@1x.jpg"
+                  alt="Фотографія Product Designer"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="work__group">
                 <h3 class="work__title">Ігор Дем'яненко</h3>
                 <p class="work__text">Product Designer</p>
@@ -228,13 +265,38 @@
               </ul>
             </li>
             <li class="work__items">
-              <img
-                class="work__icon"
-                src="./images/frontenddeveloper.jpg"
-                width="270"
-                height="260"
-                alt="Фотографія Frontend Developer"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work-img/img-2_lw@1x.jpg 1x,
+                    ./images/work-img/img-2_lw@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/work-img/img-2_mw@1x.jpg 1x,
+                    ./images/work-img/img-2_mw@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/work-img/img-2_sw@1x.jpg 1x,
+                    ./images/work-img/img-2_sw@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="work__icon"
+                  src="./images/work-img/img-2_sw@1x.jpg"
+                  width="450"
+                  height="460"
+                  alt="Фотографія Frontend Developer"
+                  loading="lazy"
+                />
+              </picture>
               <div class="work__group">
                 <h3 class="work__title">Ольга Рєпіна</h3>
                 <p class="work__text">Frontend Developer</p>
@@ -288,13 +350,38 @@
               </ul>
             </li>
             <li class="work__items">
-              <img
-                class="work__icon"
-                src="./images/marketing.jpg"
-                width="270"
-                height="260"
-                alt="Фотографія Marketing"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work-img/img-3_lw@1x.jpg 1x,
+                    ./images/work-img/img-3_lw@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/work-img/img-3_mw@1x.jpg 1x,
+                    ./images/work-img/img-3_mw@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/work-img/img-3_sw@1x.jpg 1x,
+                    ./images/work-img/img-3_sw@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="work__icon"
+                  src="./images/work-img/img-3_sw@1x.jpg"
+                  width="450"
+                  height="460"
+                  alt="Фотографія Marketing"
+                  loading="lazy"
+                />
+              </picture>
               <div class="work__group">
                 <h3 class="work__title">Микола Тарасов</h3>
                 <p class="work__text">Marketing</p>
@@ -348,13 +435,38 @@
               </ul>
             </li>
             <li class="work__items">
-              <img
-                class="work__icon"
-                src="./images/designer.jpg"
-                width="270"
-                height="260"
-                alt="Фотографія UI Designer"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/work-img/img-4_lw@1x.jpg 1x,
+                    ./images/work-img/img-4_lw@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/work-img/img-4_mw@1x.jpg 1x,
+                    ./images/work-img/img-4_mw@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/work-img/img-4_sw@1x.jpg 1x,
+                    ./images/work-img/img-4_sw@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="work__icon"
+                  src="./images/work-img/img-4_sw@1x.jpg"
+                  width="450"
+                  height="460"
+                  alt="Фотографія UI Designer"
+                  loading="lazy"
+                />
+              </picture>
               <div class="work__group">
                 <h3 class="work__title">Михайло Єрмаков</h3>
                 <p class="work__text">UI Designer</p>
@@ -681,6 +793,12 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

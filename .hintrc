@@ -17,6 +17,14 @@
         "button-name": "off",
         "link-name": "off"
       }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "img[loading]"
+        ]
+      }
     ]
   }
 }
